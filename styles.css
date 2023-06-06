@@ -7,8 +7,8 @@ body {
 header {
   padding: 10px;
   max-width: 1340px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-image {
   height: 300px;
@@ -33,20 +33,20 @@ header {
 .section {
   padding: 40px 20px 20px 200px;
   max-width: 1340px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section2 {
   padding: 60px 20px 0px 200px;
   max-width: 1340px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section3 {
   padding: 0px 20px 20px 200px;
   max-width: 1340px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section::after {
   content: "";
@@ -157,96 +157,243 @@ header {
   height: 400px;
   object-fit: cover;
 }
-.contact-wrap{
-    background: url(img/contact-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    --bs-bg-opacity: 1;
-    background-color: rgba(248,249,250,var(--bs-bg-opacity))!important;
+.contact-wrap {
+  background: url(img/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  --bs-bg-opacity: 1;
+  background-color: rgba(248, 249, 250, var(--bs-bg-opacity)) !important;
 }
 .contact-form {
-    max-width: 1340px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 30px;
+  padding: 80px 100px;
+  color: #353348;
+  line-height: 1.6;
+  font-size: 14.4px;
+}
+.align-left {
+  text-align: left;
+}
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form-column {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: left;
+}
+.form-column2 {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+.form-label {
+  font-weight: bold;
+}
+
+.form-field {
+  width: 92%;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 45px;
+  border: 1px solid #eaebec;
+  color: #212529;
+  margin-top: 8px;
+}
+
+.form-message {
+  padding: 0.375rem 0.75rem;
+  width: 96%;
+  font-weight: 400;
+  height: 100px;
+  border: 1px solid #eaebec;
+  color: #212529;
+  border-radius: 5px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.send-button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #6d62fd;
+  color: #fff;
+  border: 1px solid #6d62fd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.contact-text {
+  font-size: 20px;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  color: #a5a5bf;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 850px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .header-text {
+    padding: 10px 0 30px;
     text-align: center;
-    margin-top: 30px;
-    padding: 80px 100px;
-    color: #353348;
-    line-height: 1.6;
-    font-size: 14.4px;
   }
-  .align-left{
-    text-align: left;
+
+  #logo {
+    padding-left: 0;
+    text-align: center;
   }
-  .form-row {
+
+  .column {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .header-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .section,
+  .section2,
+  .section3 {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+    max-width: none;
+    text-align: center;
+  }
+
+  .text,
+  .text2,
+  .text3,
+  .text4 {
+    max-width: none;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .email-form {
+    flex-direction: column;
+    align-items: stretch;
     margin-bottom: 20px;
   }
-  
-  .form-row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .form-column {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
-    text-align: left;
-  }
-  .form-column2 {
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: left;
-  }
-  .form-label {
-    font-weight: bold;
-  }
-  
-  .form-field {
-    width: 92%;
-    padding: 0.375rem 0.75rem;
-font-weight: 400;
-    border-radius: 5px;
-    font-size: 14px;
-    height: 45px;
-    border: 1px solid #eaebec;
-    color: #212529;
-    margin-top: 8px;
-  }
-  
-  .form-message {
-    padding: 0.375rem 0.75rem;
-    width: 96%;
-    font-weight: 400;
-    height: 100px;
-    border: 1px solid #eaebec;
-    color: #212529;
-    border-radius: 5px;
-    margin-top: 8px;
-    font-size: 14px;
-  }
-  
-  .send-button {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 10px 20px;
-    background-color: #6d62fd;
-    color: #fff;
-    border: 1px solid #6d62fd;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .contact-heading {
-    font-size: 32px;
-    font-weight: bold;
+
+  .email-input {
     margin-bottom: 10px;
-    margin-top: 10px;
+    max-width: none;
   }
-  .contact-text {
-    font-size: 20px;
-    margin-bottom: 60px;
-    margin-top: 10px;
-    color: #a5a5bf;
+
+  .review {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
   }
+
+  .review-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .chatfood-img,
+  .order1-img,
+  .order2-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 40px;
+  }
+
+  .form-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    text-align: left;
+  }
+
+  .form-field {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .form-message {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .send-button {
+    width: 100%;
+  }
+}
+
+/* Tablet Styles */
+
+@media (min-width: 851px) and (max-width: 1024px) {
+  #logo {
+    padding-left: 80px;
+  }
+  .section,
+  .section2 {
+    padding: 40px 20px 20px 50px;
+  }
+  .section3 {
+    padding: 0 20px 20px 50px;
+  }
+  .header-image,
+  .chatfood-img,
+  .order1-img,
+  .order2-img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #logo {
+    padding-left: 100px;
+  }
+  .section,
+  .section2 {
+    padding: 40px 20px 20px 100px;
+  }
+  .section3 {
+    padding: 0 20px 20px 100px;
+  }
+}
