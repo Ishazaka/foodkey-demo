@@ -8,11 +8,67 @@
     <title>FoodKey</title>
   </head>
   <body>
-    <header>
+    <div class="slideshow-container">
+      <div
+        class="slideshow-image"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url('img/slide1.jpg');
+        "
+      >
+        <div class="slideshow-text">
+          <h2 class="slideshow-h2 animated-h2" data-text="FoodKey."></h2>
+          <h4 class="slideshow-h4">We Are Creative</h4>
+          <p class="slideshow-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div
+        class="slideshow-image"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url('img/slide2.jpg');
+        "
+      >
+        <div class="slideshow-text">
+          <h2 class="slideshow-h2 animated-h2" data-text="FoodKey."></h2>
+          <h4 class="slideshow-h4">We Are Creative</h4>
+          <p class="slideshow-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div
+        class="slideshow-image"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url('img/slide3.jpg');
+        "
+      >
+        <div class="slideshow-text">
+          <h2 class="slideshow-h2 animated-h2" data-text="FoodKey."></h2>
+          <h4 class="slideshow-h4">We Are Creative</h4>
+          <p class="slideshow-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <header>
       <div id="logo">
         <img src="img/logo.png" alt="Logo" />
       </div>
-    </header>
+    </header> -->
 
     <div class="section">
       <div class="column">
@@ -35,6 +91,7 @@
             type="email"
             class="email-input"
             placeholder="Enter your email..."
+            id="email-input"
           />
           <button class="submit-button">Submit</button>
         </div>
@@ -97,7 +154,11 @@
       </div>
     </div>
     <div class="contact-wrap">
-      <div class="contact-form">
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/xeqwbrzw"
+        method="POST"
+      >
         <h2 class="contact-heading">Contact Us</h2>
         <p class="contact-text">
           Contact FoodKey and start growing your restaurant today.
@@ -110,15 +171,19 @@
               id="name"
               class="form-field"
               placeholder="Your name"
+              name="name"
+              required
             />
           </div>
           <div class="form-column">
             <label for="email" class="form-label">Email</label>
             <input
-              type="email"
+              type="email address"
               id="email"
               class="form-field"
               placeholder="Your email"
+              name="email"
+              required
             />
           </div>
         </div>
@@ -130,15 +195,19 @@
               id="subject"
               class="form-field"
               placeholder="Your subject"
+              name="subject"
+              required
             />
           </div>
           <div class="form-column">
             <label for="contact" class="form-label">Contact</label>
             <input
-              type="number"
-              id="contact"
+              type="phone number"
+              id="phone"
               class="form-field"
               placeholder="+00 1234 5678 90"
+              name="phone"
+              required
             />
           </div>
         </div>
@@ -149,12 +218,18 @@
               id="message"
               class="form-message"
               placeholder="Enter your message..."
+              name="message"
+              required
+              style="resize: none;"
             ></textarea>
           </div>
         </div>
         <div class="align-left">
-          <button class="send-button">Send Message</button>
+          <button id="send-button" class="send-button">Send Message</button>
         </div>
+      </form>
+      <div id="success-message" style="display: none">
+        Thank you for your message. We will get back to you soon.
       </div>
     </div>
     <footer>
