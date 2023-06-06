@@ -6,7 +6,7 @@ body {
 
 .slideshow-container {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   overflow: hidden;
 }
@@ -32,27 +32,30 @@ body {
 
 .slideshow-text {
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  top: 20%;
+   right: 35%;
   text-align: center;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 .slideshow-h2 {
-  font-size: 30px;
+  font-size: 90px;
   font-weight: bold;
   margin-bottom: 20px;
+letter-spacing: 2px;
 }
 
 .slideshow-h4 {
-  font-size: 34px;
+  font-size: 44px;
   margin-bottom: 0;
   margin-top: 20px;
 }
 .slideshow-p {
-  font-size: 14px;
+  font-size: 20px;
   margin-top: 5px;
 }
 
@@ -83,24 +86,42 @@ body {
 } */
 
 .section {
-  padding: 40px 20px 20px 200px;
+  /* padding: 40px 20px 20px 200px;
   max-width: 1340px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+  margin: 30px 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: row;
+  width: 100vw;
+  height: 70vh;
+
+
 }
 .section2 {
-  padding: 60px 20px 0px 200px;
-  max-width: 1340px;
+  /* padding: 60px 20px 0px 200px; */
+  /* max-width: 1340px; */
   margin-left: auto;
   margin-right: auto;
+   height:  70vh;
+   display: flex;
+   justify-content: center;
+
+}
+.section2-box{
+    width: 80vw;
 }
 .section3 {
-  padding: 0px 20px 20px 200px;
-  max-width: 1340px;
   margin-left: auto;
   margin-right: auto;
+  height:  70vh;
+
+  display: flex;
+  justify-content: center;
 }
-.section::after {
+/* .section::after {
   content: "";
   display: table;
   clear: both;
@@ -114,19 +135,38 @@ body {
   content: "";
   display: table;
   clear: both;
-}
+} */
 .column {
   float: left;
   width: 50%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.section1-box{
+    width: 70vw;
+    height: 90%;
+
 }
 
 .heading {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
-  max-width: 320px;
   margin-top: 10px;
+
+}
+.header-text{
+  height: 400px;
+  margin: 14px 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: left;
+
+  
 }
 
 .text {
@@ -207,12 +247,13 @@ body {
   object-fit: cover;
 }
 .order1-img {
-  height: 450px;
-  object-fit: cover;
+  /* height: 450px; */
+  /* object-fit: cover; */
+    width: 490px;
 }
 .order2-img {
-  height: 400px;
-  object-fit: cover;
+  width: 490px;
+  /* object-fit: cover; */
 }
 .contact-wrap {
   background: url(img/contact-bg.png);
