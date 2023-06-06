@@ -11,7 +11,7 @@ header {
   margin-right: auto;
 }
 .header-image {
-  height: 300px;
+  height: 350px;
   object-fit: cover;
 }
 .header-text {
@@ -80,10 +80,13 @@ header {
 .text {
   margin-bottom: 20px;
   max-width: 370px;
+  opacity: 0.9;
+  color: #747775;
 }
 .text2 {
   margin-bottom: 10px;
   max-width: 360px;
+  opacity: 0.7;
 }
 .text3 {
   font-size: 26px;
@@ -101,6 +104,8 @@ header {
 }
 .bold-text {
   font-weight: bold;
+  
+  color: black;
 }
 
 .email-form {
@@ -250,13 +255,22 @@ header {
   margin-top: 10px;
   color: #a5a5bf;
 }
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
 
+.footer-content {
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+}
 /* Mobile Styles */
 
 @media (max-width: 850px) {
-  body {
-    padding: 0 10px;
-  }
 
   header {
     padding: 10px;
