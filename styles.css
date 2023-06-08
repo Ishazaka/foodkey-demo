@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .slideshow-container {
@@ -374,15 +375,19 @@ footer {
     left: auto;
   }
   .slideshow-h2{
-    font-size: 50px;
+    font-size: 40px;
   }
   .slideshow-h4 {
-    font-size: 34px;
+    font-size: 30px;
+
   }
 
   .header-text {
-    padding: 10px 0 30px;
+    /* padding: 10px 0 30px; */
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #logo {
@@ -535,6 +540,7 @@ footer {
     width: 100%;
     height: 750px;
     background-color: rgb(22, 183, 246);
+    /* background-color: #1258ff; */
     padding: 0 !important;
   }
   .test-overlay {
