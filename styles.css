@@ -34,12 +34,13 @@ body {
 .slideshow-text {
   position: absolute;
   top: 20%;
-   right: 35%;
+  right: 35%;
   text-align: center;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
+
 .slideshow-h2 {
   font-size: 90px;
   font-weight: bold;
@@ -372,7 +373,7 @@ footer {
     padding: 0 3px;
     margin: 0; */
     right: auto;
-    left: auto;
+    left: 10%;
   }
   .slideshow-h2{
     font-size: 40px;
