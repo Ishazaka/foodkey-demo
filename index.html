@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>FoodKey </title>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  
+   (function(){
+      emailjs.init("3_GVHEql2krLCjWd2");
+   })();
+</script>
   </head>
   <body>
     <div class="slideshow-container">
@@ -20,11 +30,9 @@
         "
       >
         <div class="slideshow-text">
-          <h2 class="slideshow-h2 animated-h2" data-text="FoodKey"></h2>
+          <h2 class="slideshow-h2 animated-h2" data-text="">F<span style="color:#05a2ca">oo</span>dKey</h2>
           <h4 class="slideshow-h4"> Increase your <span style="color:#05a2ca">Sales. </span> <br> Retain  your <span style="color:#05a2ca"> Guests. </span><br> Be in <span style="color:#05a2ca"> Control. </span> </h4>
-          <!-- <p class="slideshow-p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p> -->
+          
         </div>
       </div>
       <div
@@ -38,13 +46,11 @@
         "
       >
         <div class="slideshow-text">
-          <h2 class="slideshow-h2 animated-h2" data-text="FoodKey"></h2>
+          <h2 class="slideshow-h2 animated-h2" data-text="">F<span style="color:#d412ff;">oo</span>dKey</h2>
          
-          <h4 class="slideshow-h4"> Open direct <span style="color: black;">sales</span>  <br> channels  on 
-            <span style="color: black;"> delivery </span> <br> and <span style="color: black;">pickup.</span> </h4>
-          <!-- <p class="slideshow-p">
-            Increase your sales <br>Retain your guests<br>Be in control
-          </p> -->
+          <h4 class="slideshow-h4"> Open direct <span style="color:#d412ff">sales</span>  <br> channels  on 
+            <span style="color:#d412ff"> delivery </span> <br> and <span style="color:#d412ff">pickup.</span> </h4>
+          
         </div>
       </div>
       <div
@@ -58,12 +64,10 @@
         "
       >
         <div class="slideshow-text">
-          <h2 class="slideshow-h2 animated-h2" data-text="FoodKey"></h2>
+          <h2 class="slideshow-h2 animated-h2" data-text="">F<span style="color:rgb(74, 91, 251)">oo</span>dKey</h2>
           <h4 class="slideshow-h4">Drive more <span style="color:rgb(74, 91, 251)">Revenue </span> <br> in
             your <span style="color:rgb(74, 91, 251)">Venue </span> </h4>
-          <!-- <p class="slideshow-p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p> -->
+  
         </div>
       </div>
     </div>
@@ -90,25 +94,6 @@
             Brands with a strong social media presence they want to monetize
           </p>
         </div>
-        <!-- <div class="email-form">
-          <input
-            type="email"
-            class="email-input"
-            placeholder="Enter your email..."
-            id="email-input"
-          />
-          <button class="submit-button">Submit</button>
-        </div> -->
-        <!-- <div class="review">
-          <img class="review-image" src="img/download.jpeg" alt="Review" /> -->
-          <!-- <div>
-            <p class="review-text">
-              "Since we started using FoodKey, our sales have increased
-              significantly. It's so easy to manage everything in one place"
-            </p>
-            <p class="review-name">Sally Tadic</p>
-          </div> -->
-        <!-- </div> -->
       </div>
       <div class="column">
         <img class="header-image" src="img/header img (2).png" alt="Image" />
@@ -165,36 +150,73 @@
       </div>
     </div>
     </div>
+ <!--  THis is testimonial section-->
+
+ <div class="testimonial-sect">
+  <div class="test-overlay">
+    <div class="test-circle-image test-image1"></div>
+    <div class="test-circle-image test-image2"></div>
+    <div class="test-circle-image test-image3"></div>
+    <div class="test-circle-image test-image4"></div>
+    <div class="test-circle-image test-image5"></div>
+    <div class="test-circle-image test-image6"></div>
+    <div class="test-circle-image test-image7"></div>
+    <div class="test-circle-image test-image8"></div>
+  </div>
+  <div class="test-content">
+    <p class="test-text">Worldwide Feedback</p>
+    <h2 class="test-heading"> Clients</h2>
+    <div class="testimonial-box">
+      <div class="test-logo"><i class="fa-solid fa-quote-left"></i></div>
+      <div class="testimonial-text">
+        <p>
+         FoodKey is going to revolutionize the whole industry of food and restaurant, I do believe the the product of Foodkey will give the control of your business. FoodKey will help you connect with your existing clientele and drive a new traffic.
+        </p>
+      </div>
+      <div class="test-image-box">
+        <div class="test-circle-image2"></div>
+        <div class="test-name">Christina Williams</div>
+        <div class="test-designation">HR Manager</div>
+        <div class="test-stars">
+          <div class="test-star"><i class="fa-regular fa-star"></i></div>
+          <div class="test-star"><i class="fa-regular fa-star"></i></div>
+          <div class="test-star"><i class="fa-regular fa-star"></i></div>
+          <div class="test-star"><i class="fa-regular fa-star"></i></div>
+          <div class="test-star"><i class="fa-regular fa-star"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- this is end of testimonial-->
+
     <div class="contact-wrap">
-      <form
-        id="contact-form"
-        action="https://formspree.io/f/xeqwbrzw"
-        method="POST"
+      <div
+        id="contactform"
       >
+      <!-- action="https://formspree.io/f/xeqwbrzw"  method="POST" -->
         <h2 class="contact-heading">Contact Us</h2>
         <p style="font-size: 26px;" class="contact-text">
           Sign up for FoodKey and Regain Control of your Sales and Customer Experience
         </p>
         <div class="form-row">
           <div class="form-column">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label">Name*</label>
             <input
               type="text"
               id="name"
               class="form-field"
               placeholder="Your name"
-              name="name"
               required
             />
           </div>
           <div class="form-column">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">Email*</label>
             <input
               type="email address"
               id="email"
               class="form-field"
               placeholder="Your email"
-              name="email"
               required
             />
           </div>
@@ -207,42 +229,39 @@
               id="subject"
               class="form-field"
               placeholder="Your subject"
-              name="subject"
               required
             />
           </div>
           <div class="form-column">
             <label for="contact" class="form-label">Contact</label>
             <input
-              type="phone number"
+             type="string"
               id="phone"
               class="form-field"
               placeholder="+00 1234 5678 90"
-              name="phone"
               required
             />
           </div>
         </div>
         <div class="form-row">
           <div class="form-column2">
-            <label for="message" class="form-label">Message</label>
+            <label for="message" class="form-label">Message*</label>
             <textarea
               id="message"
               class="form-message"
               placeholder="Enter your message..."
-              name="message"
               required
               style="resize: none;"
             ></textarea>
           </div>
         </div>
         <div class="align-left">
-          <button id="send-button" class="send-button">Send Message</button>
+          <button id="send-button" class="send-button" onclick="sendMail()">Send Message</button>
         </div>
-        <div id="success-message" style="display: none">
+        <div id="success-message" style="display: none; color:green">
           Thank you for your message. We will get back to you soon.
         </div>
-      </form>
+      </div>
       
     </div>
     <footer>
@@ -250,6 +269,6 @@
         <p class="footer-text">FoodKey &copy; 2023. All rights reserved.</p>
       </div>
     </footer>
-    <script src="index.js"></script>
+
   </body>
 </html>

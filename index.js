@@ -8,56 +8,79 @@ window.addEventListener("load", function () {
       currentImageIndex = (currentImageIndex + 1) % images.length;
       images[currentImageIndex].classList.add("active");
   
-      clearH2s();
-      animateH2s();
+      // clearH2s();
+      // animateH2s();
     }
   
-    function clearH2s() {
-      animatedH2s.forEach((h2) => {
-        h2.innerText = "";
-      });
-    }
+    // function clearH2s() {
+    //   animatedH2s.forEach((h2) => {
+    //     h2.innerText = "";
+    //   });
+    // }
   
-    function animateH2s() {
-      animatedH2s.forEach((h2) => {
-        animateText(h2);
-      });
-    }
+    // function animateH2s() {
+    //   animatedH2s.forEach((h2) => {
+    //     animateText(h2);
+    //   });
+    // }
   
-    function animateText(element) {
-      let textToAnimate = element.dataset.text;
-      let currentTextIndex = 0;
+    // function animateText(element) {
+    //   let textToAnimate = element.dataset.text;
+    //   let currentTextIndex = 0;
   
-      function appendLetter() {
-        if (currentTextIndex < textToAnimate.length) {
-          element.innerText += textToAnimate.charAt(currentTextIndex);
-          currentTextIndex++;
-          setTimeout(appendLetter, 150);
-        }
-      }
+    //   function appendLetter() {
+    //     if (currentTextIndex < textToAnimate.length) {
+    //       element.innerText += textToAnimate.charAt(currentTextIndex);
+    //       currentTextIndex++;
+    //       setTimeout(appendLetter, 150);
+    //     }
+    //   }
   
-      appendLetter();
-    }
-    animateH2s();
+    //   appendLetter();
+    // }
+    // animateH2s();
     images[currentImageIndex].classList.add("active");
   
     setInterval(showNextImage, 4000);
 
     
   });
-  const contactForm = document.getElementById("contact-form");
-  const successMessage = document.getElementById("success-message");
 
-  contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    successMessage.style.display = "block";
-    contactForm.reset();
-  });
-  document.querySelector('.submit-button').addEventListener('click', function() {
-    let emailInput = document.getElementById('email-input');
-    let emailAddress = encodeURIComponent(emailInput.value);
-    let subject = encodeURIComponent('New email submission from FoodKey');
-    let mailtoLink = 'mailto:ishazaka1010@gmail.com?subject=' + subject + '&body=' + emailAddress;
+ function sendMail(){
 
-    window.location.href = mailtoLink;
-  });
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+    phone: document.getElementById("phone").value
+
+  }
+
+ if(params.name == '' || params.email == '' || params.message == ''){
+ let err_mes =  document.getElementById('success-message')
+ err_mes.innerHTML = "Please fill the details for the Message"
+ err_mes.style.display = "block";
+ err_mes.style.color = "red";
+
+ }else{
+  const serviceID = "service_7mktrzl"
+  const templateID = "template_b1ropbm"
+
+  emailjs.send(serviceID,templateID , params).then((res) => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("phone").value = "";
+   console.log(res);
+   document.getElementById('success-message').style.display = "block"
+   document.getElementById('success-message').style.color = "green"
+   document.getElementById('success-message').innerHTML = " Thank you for your message. We will get back to you soon."
+    }).catch(err => console.warn(err));
+ }
+
+
+
+  }
+

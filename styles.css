@@ -32,9 +32,6 @@ body {
 
 .slideshow-text {
   position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   top: 20%;
    right: 35%;
   text-align: center;
@@ -50,7 +47,7 @@ letter-spacing: 2px;
 }
 
 .slideshow-h4 {
-  font-size: 44px;
+  font-size: 48px;
   margin-bottom: 0;
   margin-top: 20px;
 }
@@ -86,10 +83,6 @@ letter-spacing: 2px;
 } */
 
 .section {
-  /* padding: 40px 20px 20px 200px;
-  max-width: 1340px;
-  margin-left: auto;
-  margin-right: auto; */
   margin: 30px 0;
  display: flex;
  justify-content: center;
@@ -262,12 +255,11 @@ letter-spacing: 2px;
   --bs-bg-opacity: 1;
   background-color: rgba(248, 249, 250, var(--bs-bg-opacity)) !important;
 }
-#contact-form {
+#contactform {
   max-width: 1340px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 30px;
   padding: 80px 100px;
   color: #353348;
   line-height: 1.6;
@@ -393,11 +385,20 @@ footer {
     width: 100%;
   }
 
-  .section,
-  .section2,
+  /* .section,
+  .section2, 
   .section3 {
     padding: 20px;
+  } */
+  .section{
+    height: 110vh;
+    display: flex;
+    flex-direction: column-reverse;
   }
+  .section3{
+    min-height: 80vh;
+  }
+
 
   .heading {
     font-size: 24px;
@@ -477,6 +478,9 @@ footer {
   #logo {
     padding-left: 80px;
   }
+  .section{
+    height: 110px;
+  }
   .section,
   .section2 {
     padding: 40px 20px 20px 50px;
@@ -507,3 +511,231 @@ footer {
     padding: 0 20px 20px 100px;
   }
 }
+
+
+  /*  Testimonial from here */
+
+  .testimonial-sect {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-color: rgb(22, 183, 246);
+    padding: 0 !important;
+  }
+  .test-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/parallax1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+  }
+  .test-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+  .test-heading {
+    font-size: 48px;
+    margin-bottom: 25px;
+    color: #18191d;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .test-text {
+    font-size: 20px;
+    line-height: 17px;
+    color: #18191d;
+    font-weight: 400;
+  }
+  .testimonial-box {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: left;
+    max-height: 311px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    width: 505px;
+  }
+  .test-logo {
+    font-size: 28px;
+    color: #acacac;
+    margin-bottom: 15px;
+  }
+  .testimonial-text {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .test-circle-image2 {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("/img/testimonial2.png") center/cover;
+  }
+  .test-circle-image {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid rgba(255, 255, 255, 0.873);
+  }
+  .test-image1 {
+    top: 120px;
+    right: 50px;
+    background: url("/img/testimonial1.png") center/cover;
+  }
+  .test-image2 {
+    top: 550px;
+    right: 150px;
+    background: url("/img/testimonial3.png") center/cover;
+  }
+  .test-image3 {
+    top: 400px;
+    right: 250px;
+    background: url("/img/testimonial4.png") center/cover;
+  }
+  .test-image4 {
+    top: 160px;
+    right: 350px;
+    background: url("/img/testimonial2.png") center/cover;
+  }
+  .test-image5 {
+    top: 80px;
+    left: 180px;
+    background: url("/img/testimonial6.png") center/cover;
+  }
+  .test-image6 {
+    top: 450px;
+    left: 250px;
+    background: url("/img/testimonial7.jpg") center/cover;
+  }
+  .test-image7 {
+    top: 250px;
+    left: 150px;
+    background: url("/img/testimonial8.jpg") center/cover;
+  }
+  .test-image8 {
+    top: 150px;
+    left: 350px;
+    background: url("/img/testimonial5.png") center/cover;
+  }
+  .test-name {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+  .test-designation {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .test-stars {
+    margin-top: 10px;
+  }
+  .test-star {
+    display: inline-block;
+    font-size: 15px;
+    color: #1b82d6;
+  }
+  @media screen and (max-width: 1200px) {
+    .test-image2 {
+      right: 50px;
+    }
+    .test-image3 {
+      right: 150px;
+    }
+    .test-image4 {
+      right: 180px;
+    }
+    .test-image8 {
+      left: 300px;
+    }
+    .test-image6 {
+      left: 100px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .test-circle-image {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .test-image-box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    .column {
+      display: block;
+    }
+    .testimonial-box {
+      max-height: 100%;
+      max-width: 400px;
+      height: 100%;
+    }
+    .test-name {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .column2 {
+      display: block;
+      padding-left: 5px;
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .testimonial-box {
+      max-width: 250px;
+      text-align: center;
+    }
+    .test-content {
+      padding: 20px;
+    }
+    .test-heading {
+      font-size: 32px;
+    }
+    .test-text {
+      font-size: 16px;
+    }
+    .test-name {
+      font-size: 18px;
+    }
+    .test-designation {
+      font-size: 14px;
+    }
+    .section, .section2{
+      height: 85vh;
+    }
+    .section3{
+      height: 60vh;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .testimonial-box {
+      max-width: 200px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .testimonial-box {
+      max-width: 150px;
+    }
+  }
+
+
