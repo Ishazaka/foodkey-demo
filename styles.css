@@ -363,6 +363,12 @@ footer {
   header {
     padding: 10px;
   }
+  .slideshow-h2{
+    font-size: 50px;
+  }
+  .slideshow-h4 {
+    font-size: 34px;
+  }
 
   .header-text {
     padding: 10px 0 30px;
