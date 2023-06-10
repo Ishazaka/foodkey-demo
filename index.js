@@ -1,16 +1,16 @@
-window.addEventListener("load", function () {
-    const images = document.querySelectorAll(".slideshow-image");
-    let currentImageIndex = 0;
-    let animatedH2s = document.querySelectorAll(".animated-h2");
+// window.addEventListener("load", function () {
+//     const images = document.querySelectorAll(".slideshow-image");
+//     let currentImageIndex = 0;
+//     let animatedH2s = document.querySelectorAll(".animated-h2");
   
-    function showNextImage() {
-      images[currentImageIndex].classList.remove("active");
-      currentImageIndex = (currentImageIndex + 1) % images.length;
-      images[currentImageIndex].classList.add("active");
+//     function showNextImage() {
+//       images[currentImageIndex].classList.remove("active");
+//       currentImageIndex = (currentImageIndex + 1) % images.length;
+//       images[currentImageIndex].classList.add("active");
   
-      // clearH2s();
-      // animateH2s();
-    }
+//       // clearH2s();
+//       // animateH2s();
+//     }
   
     // function clearH2s() {
     //   animatedH2s.forEach((h2) => {
@@ -39,12 +39,12 @@ window.addEventListener("load", function () {
     //   appendLetter();
     // }
     // animateH2s();
-    images[currentImageIndex].classList.add("active");
+  //   images[currentImageIndex].classList.add("active");
   
-    setInterval(showNextImage, 4000);
+  //   setInterval(showNextImage, 4000);
 
     
-  });
+  // });
 
  function sendMail(){
 
