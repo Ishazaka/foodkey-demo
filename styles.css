@@ -346,7 +346,7 @@ footer {
 
 @media (max-width: 850px) {
   header {
-     height: 90px;
+     height: 70px;
   }
   .slideshow-text{
     right: auto;
@@ -472,9 +472,11 @@ footer {
 /* Tablet Styles */
 
 @media (min-width: 851px) and (max-width: 1024px) {
-  #logo {
-    padding-left: 80px;
+  
+  header{
+    height: 80px;
   }
+
   .section{
     height: 110px;
   }
